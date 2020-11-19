@@ -1,0 +1,191 @@
+body {
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Pacifico", cursive;
+  animation-duration: 1.2s;
+  animation-name: slidein;
+  margin: 0;
+  padding: 0;
+}
+.main {
+  padding: 40px 110px 10px 110px;
+}
+h1 {
+  text-align: center;
+  font-family: "Monoton", cursive;
+  font-size: 5em;
+  font-weight: lighter;
+  word-spacing: 0.5em;
+  color: rgb(255, 255, 255);
+}
+h2 {
+  padding-top: 30px;
+  line-height: 0px;
+  font-size: 1.8em;
+  color: rgb(253, 165, 0);
+  font-weight: lighter;
+}
+h3 {
+  text-align: center;
+  font-size: 2.3em;
+  color: rgb(255, 255, 255);
+  font-weight: lighter;
+}
+.main p {
+  font-size: 1.3em;
+  color: rgb(255, 255, 255);
+}
+.filmScroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.filmScroll img {
+  padding: 3px 7px 3px 7px;
+  width: 260px;
+  height: 380px;
+  transition: transform 0.2s ease-in-out;
+}
+.filmScroll img:hover {
+  transform: scale(0.95);
+}
+.filmScroll img:active {
+  transform: rotate(5deg);
+}
+::-webkit-scrollbar {
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(160, 160, 160);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(160, 160, 160);
+  border-radius: 20px;
+}
+.sideMenu {
+  left: -110px;
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+  position: fixed;
+}
+.sideMenu a {
+  text-align: center;
+  transition: all 0.2s;
+  padding: 15px;
+  width: 130px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+.sideMenu a:hover {
+  margin-left: 110px;
+}
+#LinkComedias {
+  top: 20px;
+  background-color: #4caf50;
+}
+
+#LinkDramas {
+  top: 80px;
+  background-color: #2196f3;
+}
+
+#LinkInfantiles {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#LinkSeries {
+  top: 200px;
+  background-color: #555;
+}
+.header {
+  overflow: auto;
+  overflow-x: visible;
+  overflow-y: visible;
+  white-space: nowrap;
+}
+.login {
+  float: right;
+  border: solid 4px white;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: auto;
+  padding: 8px 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+}
+.login:hover {
+  transform: rotate(360deg);
+}
+input[type="text"] {
+  float: right;
+  width: 140px;
+  box-sizing: border-box;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  font-size: 1.2em;
+  background-color: transparent;
+  background-image: url("images/search.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 8px 15px 8px 53px;
+  font-family: "Pacifico", cursive;
+  transition: all 0.4s ease-in-out;
+  color: white;
+}
+input[type="text"]:focus {
+  outline-width: 0;
+  width: 60vw;
+}
+#top {
+  margin-bottom: 25px;
+}
+svg {
+  display: block;
+}
+.bottom {
+  height: 35vh;
+  width: 100%;
+  background-color: rgb(177, 136, 1);
+}
+h4 {
+  position: relative;
+  top: -30px;
+  margin: 0;
+  font-size: 1.5em;
+  color: white;
+  background-color: rgb(177, 136, 1);
+}
+footer img {
+  width: 4%;
+  height: 4%;
+  transition: transform 0.2s ease-in-out;
+}
+footer img:hover {
+  transform: scale(1.2);
+}
+.gmail,
+.phone {
+  width: 2%;
+  height: 2%;
+}
+@keyframes slidein {
+  from {
+    margin-right: 100%;
+    margin-left: -100%;
+  }
+
+  to {
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+}
